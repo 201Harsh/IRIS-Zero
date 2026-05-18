@@ -21,7 +21,6 @@ export const TalkwithIRIS = async (req: Request, res: Response) => {
       data: { response },
     });
   } catch (error) {
-    console.log(error)
     return res.json({
       success: false,
       message: "Internal server error",
