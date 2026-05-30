@@ -1,4 +1,9 @@
-const LeftPanel: React.FC<{
+import { SystemStatus } from "../types/type";
+import { Volume2, Activity, Brain, Terminal } from "lucide-react";
+import { GlassCard } from "./ui/GlassCard";
+import { motion } from "framer-motion";
+
+export const LeftPanel: React.FC<{
   status: SystemStatus;
   transcript: string;
   isActive: boolean;
