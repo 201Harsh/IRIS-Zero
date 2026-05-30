@@ -115,16 +115,15 @@ export const Dock: React.FC<{
           <motion.button
             ref={buttonRef}
             onPointerDown={(e) => {
-              // Prevent default touch behaviors that might interrupt the hold
               e.preventDefault();
               onHoldStart();
             }}
             onPointerUp={onHoldEnd}
             onPointerLeave={onHoldEnd}
-            onContextMenu={(e) => e.preventDefault()} // Prevent right-click menu interrupting hold
+            onContextMenu={(e) => e.preventDefault()}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            style={{ touchAction: "none" }} // Ensure touch devices don't scroll while holding
+            style={{ touchAction: "none" }}
             className={`
               relative w-20 h-20 rounded-full flex items-center justify-center
               transition-all duration-500 cursor-pointer
