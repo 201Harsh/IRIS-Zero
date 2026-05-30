@@ -110,7 +110,7 @@ const IRISZero: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00ff88]/5 rounded-full blur-[128px]" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#00cc6a]/5 rounded-full blur-[128px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00ff88]/3 rounded-full blur-[150px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-[#00ff88]/3 rounded-full blur-[150px]" />
       </div>
 
       <div
@@ -241,7 +241,7 @@ const IRISZero: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="absolute inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm"
+            className="absolute inset-0 z-60 flex items-center justify-center bg-black/60 backdrop-blur-sm"
             onClick={() => setShowSettings(false)}
           >
             <motion.div
