@@ -1,12 +1,17 @@
 import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Zap, Brain, CheckCircle2, Loader2, X, Circle } from "lucide-react";
+import { Zap, Brain, CheckCircle2, Loader2, X, Circle} from "lucide-react";
 import {
   ExecutionTask,
   RecordingState,
   SystemStatus,
   VoiceState,
 } from "./types/type";
+import { Header } from "./Components/Header";
+import { LeftPanel } from "./Components/LeftPanel";
+import { RightPanel } from "./Components/RightPanel";
+import { GlobeAI } from "./Components/NeuralGlobe";
+import { GlassCard } from "./Components/ui/GlassCard";
 
 const IRISZero: React.FC = () => {
   const [voiceState, setVoiceState] = useState<VoiceState>("idle");
