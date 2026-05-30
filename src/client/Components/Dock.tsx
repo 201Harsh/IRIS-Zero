@@ -145,7 +145,7 @@ export const Dock: React.FC<{
               <Mic className="w-8 h-8 text-white/80" />
             )}
             <div
-              className={`absolute inset-0 rounded-full transition-opacity duration-500 pointer-events-none ${isRecording ? "opacity-100" : "opacity-0"} bg-gradient-to-br from-[#00ff88]/20 to-transparent blur-md`}
+              className={`absolute inset-0 rounded-full transition-opacity duration-500 pointer-events-none ${isRecording ? "opacity-100" : "opacity-0"} bg-linear-to-br from-[#00ff88]/20 to-transparent blur-md`}
             />
           </motion.button>
 
